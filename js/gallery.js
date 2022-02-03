@@ -42,12 +42,12 @@ if(mCurrentIndex >=mImages.length)
 if(mCurrentIndex <0){
   mCurrentIndex=mImages.length-1;
 }
-document.getElementById('Photo').src mImages[mCurrentIndex].img;
-var loc=document.getElementByClassName('location');
+document.getElementById('photo').src mImages[mCurrentIndex].img;
+var loc=document.getElementsByClassName('location');
 loc[0].innerHTML= "Location: " + mImages[mCurrentIndex].location;
-var des=document.getElementByClassName('description');
+var des=document.getElementsByClassName('description');
 des[0].innterHTML="Description: "+ mImages[mCurrentIndex].description;
-var dt=document.getElementByClassName ('date');
+var dt=document.getElementsByClassName ('date');
 dt[0].innerHTML= "Date: "+ mImages[mCurrentIndex].date;
 
 mLastFrameTime=0;
@@ -127,7 +127,6 @@ $(document).ready( function() {
 my: "right bottom",
 at: "right bottom",
 of: "#nav"
-  })
 });
 
 const urlParams = new URLSearchParams(window.location.search);
