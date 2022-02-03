@@ -42,7 +42,7 @@ if(mCurrentIndex >=mImages.length)
 if(mCurrentIndex <0){
   mCurrentIndex=mImages.length-1;
 }
-document.getElementById('photo').src mImages[mCurrentIndex].img;
+document.getElementById('photo').src= mImages[mCurrentIndex].img;
 var loc=document.getElementsByClassName('location');
 loc[0].innerHTML= "Location: " + mImages[mCurrentIndex].location;
 var des=document.getElementsByClassName('description');
